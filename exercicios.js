@@ -181,13 +181,13 @@ function trocaPrimeiroEUltimo(array) {
 // se elas são iguais, desconsiderando letras maiúsculas ou minúsculas.
 
 // Para comparar se uma string é igual a outra desconsiderando maiúsculas e minúsculas
-// utilizamos string1.toLoweCase() == string2.toLowerCase(). Assim, compararemos se o tipo da string1
-// é igual ao tipo da string2.
-// Lembrando que == tipos iguais, === valores e tipos iguais.
+// utilizamos string1.toLoweCase() === string2.toLowerCase(). Assim, compararemos se o valor e o tipo da string1
+// é igual ao valor e o tipo da string2.
+// Lembrando que == valores iguais, === valores e tipos iguais.
 
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
-return string1.toLowerCase() == string2.toLowerCase()
+return string1.toLowerCase() === string2.toLowerCase()
 }
 
 // EXERCÍCIO 13
@@ -221,6 +221,10 @@ maior ou igual = >=
 maior = >
 e = &&
 ou = || */
+
+// Quando eu faço o e (&&) as duas condições precisam ser verdadeiras
+// No caso do ou (||) "faz o papel" de senão (verificar tabela verdade)
+
 
 // Após finalizar, dar um console.log(variável de resolução)
 
